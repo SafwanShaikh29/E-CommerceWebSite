@@ -1,0 +1,151 @@
+.adminContainer {
+  padding: 1rem 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.formContainer {
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  border-left: 4px solid var(--primary);
+}
+
+.formTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.row {
+  display: flex;
+  gap: 1rem;
+}
+
+@media (max-width: 640px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex-grow: 1;
+}
+
+.formGroup label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #94a3b8;
+}
+
+.input {
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(255,255,255,0.1);
+  background: rgba(0,0,0,0.2);
+  color: var(--foreground);
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.input:focus {
+  border-color: var(--primary);
+}
+
+.submitBtn {
+  align-self: flex-start;
+  margin-top: 1rem;
+}
+
+.tableContainer {
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.tableTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.tableWrapper {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th {
+  text-align: left;
+  padding: 1rem;
+  color: #94a3b8;
+  font-weight: 500;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.table td {
+  padding: 1rem;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  vertical-align: middle;
+}
+
+.productCell {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.thumb {
+  width: 40px;
+  height: 40px;
+  border-radius: 0.25rem;
+  object-fit: cover;
+  background: rgba(0,0,0,0.2);
+}
+
+.editBtn {
+  color: var(--primary);
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  background: rgba(59, 130, 246, 0.1);
+  transition: background 0.2s;
+}
+
+.editBtn:hover {
+  background: rgba(59, 130, 246, 0.2);
+}
+
+.loading {
+  text-align: center;
+  color: #94a3b8;
+  padding: 2rem;
+}
+
+.emptyTable {
+  text-align: center;
+  color: #94a3b8;
+  padding: 3rem;
+}
